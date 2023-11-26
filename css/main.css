@@ -1,7 +1,9 @@
 body {
     margin: 0;
     overflow-x: hidden;
-    font-family: 'Hina Mincho';
+    font-family: "dnp-shuei-shogomincho-std", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .page-header {
@@ -11,7 +13,7 @@ body {
     z-index: 999;
 }
 .page-header .column {
-    width: 100%;
+    width: 66%;
 }
 .page-header nav .nav-list {
     display: flex;
@@ -25,20 +27,34 @@ body {
 .page-header nav .nav-link {
     display: block;
     position: relative;
-    padding: .5em;
+    padding: 0.5em;
     font-size: 1.6em;
+    color: #180614;
     text-align: center;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .main-bg {
+    display: grid;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgb(106, 243, 212);
+    height: 100vh;
+    background-color: #eaf4fc;
+    grid-template-columns: 1fr 4fr 1fr;
     z-index: 1;
+}
+.main-bg .image-wrapper {
+    position: relative;
+    top: 50%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0, -50%);
+}
+.main-bg .side-image {
+    width: 100%;
 }
 
 .home-area {
@@ -59,7 +75,9 @@ body {
 .home-area-title {
     margin: 30vh auto 0 auto;
     font-size: 5em;
-    font-family: 'Ephesis';
+    font-family: "kokuryu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .home-area-description {
     font-size: 2em;
@@ -86,6 +104,14 @@ main {
     padding: 2rem 0;
 }
 
+.section-title {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    font-family: "kokuryu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .row {
     position: relative;
     margin: 0 auto;
@@ -104,17 +130,40 @@ main {
     float: left;
     padding: 0 1rem;
 }
-@media only screen and (min-width: 48em) {
-    .column {
-        padding: 0 15px;
-    }
+.col-2 {
+    width: 16.6666666666%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.3333333333%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-8 {
+    width: 66.6666666666%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-12 {
+    width: 100%;
 }
 
 a {
     text-decoration: none;
 }
-ul, li {
+ul,
+li {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+@media only screen and (min-width: 48em) {
+    .column {
+        padding: 0 15px;
+    }
 }
