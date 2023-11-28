@@ -1,5 +1,6 @@
 .hv-wrapper {
   display: flex;
+  padding-top: 15px;
 }
 
 .hv-wrapper .hv-item {
@@ -72,12 +73,12 @@
 
 .hv-item-image {
   width: 75px;
+  margin: 5px 0;
 }
 
 .simple-card {
   display: inline-block;
   position: relative;
-  height: 128px;
 }
 .simple-card > span {
   display: block;
@@ -85,6 +86,7 @@
   top: 4px;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 1.2em;
 }
 
 .hv-hover-translate {
