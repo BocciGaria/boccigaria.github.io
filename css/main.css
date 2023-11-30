@@ -13,18 +13,28 @@ body {
     overflow: hidden;
     z-index: 999;
 }
+
 .page-header .column {
     width: 66%;
 }
+
 .page-header nav .nav-list {
     display: flex;
+    position: relative;
     justify-content: space-around;
-    padding: 1em 0;
+    margin: 1em 0;
+    background:
+        radial-gradient(circle at left top, #eaf4fc 25px, transparent 25px),
+        radial-gradient(circle at left bottom, #eaf4fc 25px, transparent 25px),
+        radial-gradient(circle at right top, #eaf4fc 25px, transparent 25px),
+        radial-gradient(circle at right bottom, #eaf4fc 25px, rgba(24, 6, 20, 0.8) 25px);
 }
+
 .page-header nav .nav-item {
     position: relative;
     margin: 0.5em 0;
 }
+
 .page-header nav .nav-link {
     display: block;
     position: relative;
@@ -32,7 +42,7 @@ body {
     font-size: 1.6em;
     text-align: center;
     transition: all 0.5s;
-    color: #180614;
+    color: #eaf4fc;
 }
 
 .main-bg {
@@ -46,16 +56,34 @@ body {
     grid-template-columns: 1fr 4fr 1fr;
     z-index: 1;
 }
-.main-bg .image-wrapper {
+
+.bg-side-image-wrapper {
     position: relative;
     top: 50%;
-    width: 120px;
-    height: 120px;
+    width: 125px;
+    height: 125px;
     margin-left: auto;
     margin-right: auto;
     transform: translateY(-50%);
 }
-.main-bg .side-image {
+
+.bg-side-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-center-image-wrapper {
+    position: relative;
+    top: 50%;
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-50%);
+}
+
+.bg-center-image {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -68,6 +96,7 @@ body {
     top: 0;
     left: 0;
 }
+
 .home-area-wrapper {
     position: absolute;
     width: 100%;
@@ -76,6 +105,7 @@ body {
     transform: translateY(-50%);
     z-index: 2;
 }
+
 .home-area-title {
     font-size: 5em;
     font-family: "kokuryu", sans-serif;
@@ -83,6 +113,7 @@ body {
     font-style: normal;
     margin: 0;
 }
+
 .home-area-description {
     font-size: 2em;
 }
@@ -91,14 +122,17 @@ main {
     position: relative;
     z-index: 99;
 }
+
 .section-about {
     width: 100%;
     min-height: 100vh;
 }
+
 .section-skills {
     width: 100%;
     min-height: 100vh;
 }
+
 .section-works {
     width: 100%;
     min-height: 100vh;
@@ -120,6 +154,7 @@ main {
     text-align: center;
     margin: 2rem 0 0 0;
 }
+
 .about-description {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -140,33 +175,42 @@ main {
 .row-center {
     text-align: center;
 }
+
 .row-center .column {
     display: inline-block;
     float: none;
 }
+
 .column {
     position: relative;
     float: left;
     padding: 0 1rem;
 }
+
 .col-2 {
     width: 16.6666666666%;
 }
+
 .col-3 {
     width: 25%;
 }
+
 .col-4 {
     width: 33.3333333333%;
 }
+
 .col-6 {
     width: 50%;
 }
+
 .col-8 {
     width: 66.6666666666%;
 }
+
 .col-9 {
     width: 75%;
 }
+
 .col-12 {
     width: 100%;
 }
@@ -184,6 +228,7 @@ main {
 a {
     text-decoration: none;
 }
+
 ul,
 li {
     padding: 0;
