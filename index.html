@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/hierarchy-view.css" />
   <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="css/opening-animation.css">
 </head>
 
 <body>
@@ -38,15 +39,15 @@
   <div class="main-bg">
     <div>
       <div class="image-wrapper">
-        <img src="img/丸に違い柏-黒.png" alt="丸に違い柏-黒" class="image side-image animation-toggle-image-front" data-image-for="home"/>
-        <img src="img/五七桐-黒.png" alt="五七桐-黒" class="image side-image animation-toggle-image-back" data-image-for="about">
+        <img src="img/丸に違い柏-黒.png" alt="丸に違い柏-黒" class="image side-image js-animation-toggle-image" data-image-for="home"/>
+        <img src="img/五七桐-黒.png" alt="五七桐-黒" class="image side-image js-animation-toggle-image" data-image-for="about">
       </div>
     </div>
     <div></div>
     <div>
       <div class="image-wrapper">
-        <img src="img/徳川葵-黒.png" alt="徳川葵-黒" class="image side-image animation-toggle-image-front" data-image-for="home">
-        <img src="img/近衛牡丹-黒.png" alt="近衛牡丹-黒" class="image side-image animation-toggle-image-back" data-image-for="about">
+        <img src="img/徳川葵-黒.png" alt="徳川葵-黒" class="image side-image js-animation-toggle-image" data-image-for="home">
+        <img src="img/近衛牡丹-黒.png" alt="近衛牡丹-黒" class="image side-image js-animation-toggle-image" data-image-for="about">
       </div>
     </div>
   </div>
@@ -260,7 +261,8 @@
       </div>
     </section>
   </main>
-  <script src="js/hierarchy-view.js"></script>
+  <div class="shutter"></div>
+  <script src="js/animation.js"></script>
 </body>
 
 </html>
