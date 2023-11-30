@@ -10,7 +10,10 @@
 })(document);
 
 function toggleImage(image, trigger) {
-    if (trigger.getBoundingClientRect().top <= 0 && trigger.getBoundingClientRect().bottom > 0) {
+    if (
+        trigger.getBoundingClientRect().top <= window.innerHeight * 0.25
+        && trigger.getBoundingClientRect().bottom > window.innerHeight * 0.25
+    ) {
         image.classList.add("animation-toggle-image-front");
         image.classList.remove("animation-toggle-image-back");
     } else {
