@@ -24,10 +24,10 @@ body {
     justify-content: space-around;
     margin: 1em 0;
     background:
-        radial-gradient(circle at left top, #eaf4fc 25px, transparent 25px),
-        radial-gradient(circle at left bottom, #eaf4fc 25px, transparent 25px),
-        radial-gradient(circle at right top, #eaf4fc 25px, transparent 25px),
-        radial-gradient(circle at right bottom, #eaf4fc 25px, rgba(24, 6, 20, 0.8) 25px);
+        radial-gradient(circle at left top, #eaf4fc 20px, transparent 20px),
+        radial-gradient(circle at left bottom, #eaf4fc 20px, transparent 20px),
+        radial-gradient(circle at right top, #eaf4fc 20px, transparent 20px),
+        radial-gradient(circle at right bottom, #eaf4fc 20px, rgba(24, 6, 20, 0.8) 20px);
 }
 
 .page-header nav .nav-item {
@@ -38,7 +38,7 @@ body {
 .page-header nav .nav-link {
     display: block;
     position: relative;
-    padding: 0.5em;
+    /* padding: 0.5em; */
     font-size: 1.6em;
     text-align: center;
     transition: all 0.5s;
