@@ -1,0 +1,56 @@
+/* 冠位十二階色早見表 */
+#kan-i-12-chart {
+    position: relative;
+}
+.kan-i-12-chart-wrapper {
+    position: absolute;
+    width: 60px;
+    text-align: center;
+}
+.kan-i-12-chart-wrapper > p {
+    margin: 0;
+}
+.kan-i-12-chart-body {
+    height: 240px;
+    background: linear-gradient(#65318e, #a59aca, #19448e, #89c3eb, #ba2636, #ec6d71, #d9a62e, #fef263, #ffffff, #dcdddd, #000b00, #474a4d);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 0%);
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+/* 冠位十二階式背景色 */
+.kan-i-12-daitoku {
+    background: radial-gradient(circle at left, #65318e 10%, transparent); /*紫*/
+  }
+  .kan-i-12-shotoku {
+    background: radial-gradient(circle at left, #a59aca 10%, transparent); /*藤紫*/
+  }
+  .kan-i-12-dainin {
+    background: radial-gradient(circle at left, #19448e 10%, transparent); /*瑠璃紺*/
+  }
+  .kan-i-12-shonin {
+    background: radial-gradient(circle at left, #89c3eb 10%, transparent); /*勿忘草色*/
+  }
+  .kan-i-12-dairai {
+    background: radial-gradient(circle at left, #ba2636 10%, transparent); /*朱*/
+  }
+  .kan-i-12-shorai {
+    background: radial-gradient(circle at left, #ec6d71 10%, transparent); /*真朱*/
+  }
+  .kan-i-12-daishin {
+    background: radial-gradient(circle at left, #d9a62e 10%, transparent); /*櫨染*/
+  }
+  .kan-i-12-shoshin {
+    background: radial-gradient(circle at left, #fef263 10%, transparent); /*黄檗色*/
+  }
+  .kan-i-12-daigi {
+    background: radial-gradient(circle at left, #ffffff 10%, transparent); /*白*/
+  }
+  .kan-i-12-shogi {
+    background: radial-gradient(circle at left, #dcdddd 10%, transparent); /*白鼠*/
+  }
+  .kan-i-12-daichi {
+    background: radial-gradient(circle at left, #000b00 10%, transparent); /*濡羽色*/
+  }
+  .kan-i-12-shochi {
+    background: radial-gradient(circle at left, #474a4d 10%, transparent); /*藍墨茶*/
+  }

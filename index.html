@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ポートフォリオ</title>
-  <script src="js/font.js"></script>
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/hierarchy-view.css" />
   <link rel="stylesheet" href="css/animation.css" />
   <link rel="stylesheet" href="css/opening-animation.css">
+  <link rel="stylesheet" href="css/kan-i-12.css">
 </head>
 
 <body>
@@ -101,6 +101,13 @@
       <!-- 技術系図表示領域 -->
       <div class="row row-center">
         <div class="column">
+          <!-- 冠位十二階色早見表 -->
+          <div id="kan-i-12-chart">
+            <div class="kan-i-12-chart-wrapper">
+              <p>熟練度</p>
+              <div class="kan-i-12-chart-body"></div>
+            </div>
+          </div>
           <!-- 系図構造 -->
           <div class="hv-container">
             <div class="hv-wrapper">
@@ -176,7 +183,7 @@
                                 </p>
                               </div>
                               <div class="hv-item-child vertical-text">
-                                <p class="simple-card" style="height:208px">
+                                <p class="simple-card" style="height:256px">
                                   <span class="hv-hover-translate kan-i-12-shonin">亜馬孫蜘蛛の巣奉仕</span>
                                   <span class="hv-hover-translate kan-i-12-shonin">Amazon Web Service</span>
                                 </p>
@@ -224,6 +231,12 @@
                             </div>
                             <div class="hv-item-children">
                               <div class="hv-item-child vertical-text">
+                                <p class="simple-card" style="height:160px">
+                                  <span class="hv-hover-translate kan-i-12-dainin">大麦珈琲脚本</span>
+                                  <span class="hv-hover-translate kan-i-12-dainin">JavaScript</span>
+                                </p>
+                              </div>
+                              <div class="hv-item-child vertical-text">
                                 <p class="simple-card" style="height:172px">
                                   <span class="hv-hover-translate kan-i-12-shonin">超文書組指定言語</span>
                                   <span class="hv-hover-translate kan-i-12-shonin">HTML</span>
@@ -233,12 +246,6 @@
                                 <p class="simple-card" style="height:160px">
                                   <span class="hv-hover-translate kan-i-12-daishin">段々滝様式要項</span>
                                   <span class="hv-hover-translate kan-i-12-daishin">CSS</span>
-                                </p>
-                              </div>
-                              <div class="hv-item-child vertical-text">
-                                <p class="simple-card" style="height:160px">
-                                  <span class="hv-hover-translate kan-i-12-dainin">大麦珈琲脚本</span>
-                                  <span class="hv-hover-translate kan-i-12-dainin">JavaScript</span>
                                 </p>
                               </div>
                             </div>
@@ -267,6 +274,7 @@
   </main>
   <div class="shutter"></div>
   <script src="js/animation.js"></script>
+  <script src="js/font.js"></script>
 </body>
 
 </html>
